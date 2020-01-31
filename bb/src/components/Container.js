@@ -21,7 +21,7 @@ const Container = () => {
     <div>
       <Search />
       {characters.map(ch => (
-        <Card ch={ch} />
+        <Card ch={ch} key={ch.char_id} />
       ))}
     </div>
   );
