@@ -20,7 +20,9 @@ const Container = () => {
   return (
     <div>
       <Search />
-      <Card />
+      {characters.map(ch => (
+        <Card ch={ch} />
+      ))}
     </div>
   );
 };
